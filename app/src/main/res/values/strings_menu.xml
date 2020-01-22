@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region tituloHeaders menu-->
+    <string name="header_menu">Procesos</string>
+    <string name="sub_header_menu">Otros</string>
+    <!--endregion-->
+
+    <!--region titulo Bandejas-->
+    <string name="menu_comidda">Comida</string>
+    <string name="menu_sugerencias">Sugerencias</string>
+    <!--endregion-->
+
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_crear_entidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="crearEntidadPrueba"
+        android:text="Crea Entidad Prueba"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_consultar_entidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="consultarEntidadPrueba"
+        android:text="Consultar Entidad Prueba"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_consultar_lista_entidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="consultarListaPrueba"
+        android:text="Consultar Lista Prueba"/>
+</android.support.v7.widget.LinearLayoutCompat>

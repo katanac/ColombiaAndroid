@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Colombia</string>
+
+    //Mensajes de Excepcion
+    <string name="error_msj_sin_conexion">Comprueba tu conexión a Internet.</string>
+    <string name="error_msj_usuario_no_encontrado">No se pueden recuperar los datos del usuario o el usuario no existe.</string>
+    //Mensajes de Excepcion
+</resources>

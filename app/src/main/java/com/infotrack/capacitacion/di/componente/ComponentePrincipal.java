@@ -6,6 +6,7 @@ import com.infotrack.capacitacion.di.modulo.ModuloPrincipal;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
+import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralFragmento;
 
 import javax.inject.Singleton;
 
@@ -18,6 +19,8 @@ public interface ComponentePrincipal {
     Context contexto();
 
     void inject(InformacionGeneralActividad pruebaActividad);
+
+    void inject(InformacionGeneralFragmento informacionGeneralFragmento);
 
     void inject(ComidaActividad comidaActividad);
 

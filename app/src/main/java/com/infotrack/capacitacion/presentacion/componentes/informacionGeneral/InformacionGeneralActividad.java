@@ -1,6 +1,9 @@
 package com.infotrack.capacitacion.presentacion.componentes.informacionGeneral;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -14,15 +17,22 @@ import javax.inject.Inject;
 
 public class InformacionGeneralActividad extends ActividadBase {
 
+    //region Atributos
     @Inject
     InformacionGeneralPresentador presentador;
-
     @Inject
     Navegador navegador;
+    //endregion
 
+    public static Intent obtenerintencion(Context contexto) {
+        return new Intent(contexto, InformacionGeneralActividad.class);
+    }
+
+
+    //region Actividad Base
     @Override
     public int asignarLayout() {
-        return R.layout.fragmento_info_general;
+        return R.layout.actividad_contenedor;
     }
 
     @Override
@@ -34,8 +44,12 @@ public class InformacionGeneralActividad extends ActividadBase {
 
     @Override
     public void iniciarActividad(Bundle bundle) {
+        Fragment fragmento = getSupportFragmentManager().findFragmentById(R.id.contenedor);
+        if (fragmento == null)
+            agregarFragmento(R.id.contenedor, navegador.navegarInformacionGeneralFragmento());
 
     }
+    //endregion
 
     public void crearEntidadPrueba(View view) {
         presentador.establecerVista(null);

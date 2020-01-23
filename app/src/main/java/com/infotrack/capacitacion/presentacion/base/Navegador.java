@@ -7,6 +7,8 @@ import com.infotrack.artefactos.utilitarios.base.FragmentoBase;
 import com.infotrack.capacitacion.R;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
+import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
+import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralFragmento;
 
 import javax.inject.Inject;
 
@@ -41,6 +43,16 @@ public class Navegador implements INavegador {
     @Override
     public FragmentoBase navegarComidaFragmento() {
         return ComidaFragmento.obtenerInstancia();
+    }
+
+    @Override
+    public void navegarInformacionGeneralActividad(Context contexto) {
+        contexto.startActivity(InformacionGeneralActividad.obtenerintencion(contexto));
+    }
+
+    @Override
+    public FragmentoBase navegarInformacionGeneralFragmento() {
+        return InformacionGeneralFragmento.obtenerInstancia()                                                       ;
     }
     //endregion
 

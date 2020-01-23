@@ -100,6 +100,9 @@ dependencies {
     //FlexBox
     implementation 'com.google.android:flexbox:1.0.0'
 
+    //carouselView
+    implementation 'com.synnapps:carouselview:0.1.5'
+
     //Firebase -> Dependencias mas altas son para el uso con la bibilioteca de retrocompatibilidad de androidx
     implementation "com.google.firebase:firebase-auth:$dependencyVersions.firebase"
     implementation "com.google.firebase:firebase-database:$dependencyVersions.firebase"

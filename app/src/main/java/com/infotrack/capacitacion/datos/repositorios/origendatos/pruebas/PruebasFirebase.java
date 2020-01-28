@@ -3,7 +3,7 @@ package com.infotrack.capacitacion.datos.repositorios.origendatos.pruebas;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.infotrack.artefactos.utilitarios.firebase.RxFirebaseHelper;
-import com.infotrack.capacitacion.datos.entidades.PruebaDto;
+import com.infotrack.capacitacion.datos.entidades.ComidaDto;
 
 import java.util.List;
 
@@ -15,55 +15,55 @@ class PruebasFirebase implements PruebasOrigenDatos {
     final private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
 
     @Override
-    public Observable persistirPrueba(final PruebaDto pruebaDto) {
+    public Observable persistirPrueba(final ComidaDto comidaDto) {
         return firebaseHelper.getObservable(referencia
                 .child("base")
                 .child("pruebaentidad")
                 .push()
-                .setValue(pruebaDto));
+                .setValue(comidaDto));
     }
 
     @Override
-    public Observable<List<PruebaDto>> consultarListadoPrueba() {
+    public Observable<List<ComidaDto>> consultarListadoPrueba() {
         return firebaseHelper.consultaListaTiempoReal(
                 referencia.child("pruebaentidad"),
-                PruebaDto.class
+                ComidaDto.class
         );
     }
 
     @Override
-    public Observable<PruebaDto> consultarPrueba() {
+    public Observable<ComidaDto> consultarPrueba() {
         return firebaseHelper.consultaUnicaVez(
                 referencia.child("pruebaentidad")
                         .child("-LfvK9KzyO2IWWD7kovi"),
-                PruebaDto.class,
+                ComidaDto.class,
                 false
         );
     }
 
     @Override
-    public Observable<List<PruebaDto>> consultarListadoPruebaTiempoReal() {
+    public Observable<List<ComidaDto>> consultarListadoPruebaTiempoReal() {
         return firebaseHelper.consultaListaTiempoReal(
                 referencia.child("pruebaentidad"),
-                PruebaDto.class
+                ComidaDto.class
         );
     }
 
     @Override
-    public Observable<PruebaDto> consultarPruebaTiempoReal() {
+    public Observable<ComidaDto> consultarPruebaTiempoReal() {
         return firebaseHelper.consultaTiempoReal(
                 referencia.child("pruebaentidad")
                         .child("-LfvK9KzyO2IWWD7kovi"),
-                PruebaDto.class,
+                ComidaDto.class,
                 false
         );
     }
 
     @Override
-    public Observable<List<PruebaDto>> consultarListadoPruebaPorFiltro() {
+    public Observable<List<ComidaDto>> consultarListadoPruebaPorFiltro() {
         return firebaseHelper.consultaListaUnicaVez(
                 referencia.child("-LfvK9KzyO2IWWD7kovi"),
-                PruebaDto.class
+                ComidaDto.class
         );
     }
 }

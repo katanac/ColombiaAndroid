@@ -9,7 +9,7 @@
         <menu>
             <item
                 android:id="@+id/navegador_comida"
-                android:icon="@drawable/combo_estilo_degrade"
+                android:icon="@drawable/ic_comida"
                 android:title="@string/menu_comidda" />
         </menu>
     </item>

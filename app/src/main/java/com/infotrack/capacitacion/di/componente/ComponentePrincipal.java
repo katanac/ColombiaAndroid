@@ -3,6 +3,8 @@ package com.infotrack.capacitacion.di.componente;
 import android.content.Context;
 
 import com.infotrack.capacitacion.di.modulo.ModuloPrincipal;
+import com.infotrack.capacitacion.presentacion.componentes.Biodiversidad.BiodiversidadActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Biodiversidad.BiodiversidadFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
@@ -25,4 +27,8 @@ public interface ComponentePrincipal {
     void inject(ComidaActividad comidaActividad);
 
     void inject(ComidaFragmento comidaFragmento);
+
+    void inject(BiodiversidadActividad biodiversidadActividad);
+
+    void inject(BiodiversidadFragmento biodiversidadFragmento);
 }

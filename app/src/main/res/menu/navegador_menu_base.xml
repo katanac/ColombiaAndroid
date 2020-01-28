@@ -11,6 +11,11 @@
                 android:id="@+id/navegador_comida"
                 android:icon="@drawable/combo_estilo_degrade"
                 android:title="@string/menu_comidda" />
+
+            <item
+                android:id="@+id/navegador_biodiversidad"
+                android:icon="@drawable/ic_biodiversidad_colombia"
+                android:title="@string/menu_biodiversidad" />
         </menu>
     </item>
 
@@ -25,5 +30,7 @@
         </menu>
 
     </item>
+
+
 
 </menu>

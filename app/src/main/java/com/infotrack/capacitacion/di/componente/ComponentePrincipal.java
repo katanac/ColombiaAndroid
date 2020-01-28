@@ -5,6 +5,8 @@ import android.content.Context;
 import com.infotrack.capacitacion.di.modulo.ModuloPrincipal;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
+import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralFragmento;
 
@@ -25,4 +27,8 @@ public interface ComponentePrincipal {
     void inject(ComidaActividad comidaActividad);
 
     void inject(ComidaFragmento comidaFragmento);
+
+    void inject(PresidentesFragmento presidentesFragmento);
+
+    void inject (PresidentesActividad presidentesActividad);
 }

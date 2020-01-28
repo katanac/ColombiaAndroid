@@ -11,6 +11,10 @@
                 android:id="@+id/navegador_comida"
                 android:icon="@drawable/combo_estilo_degrade"
                 android:title="@string/menu_comidda" />
+            <item
+                android:id="@+id/navegador_presedente"
+                android:icon="@drawable/ic_presidents"
+                android:title="@string/menu_presidentes" />
         </menu>
     </item>
 

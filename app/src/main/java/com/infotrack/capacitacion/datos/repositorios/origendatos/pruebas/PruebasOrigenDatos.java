@@ -1,21 +1,21 @@
 package com.infotrack.capacitacion.datos.repositorios.origendatos.pruebas;
 
-import com.infotrack.capacitacion.datos.entidades.PruebaDto;
+import com.infotrack.capacitacion.datos.entidades.ComidaDto;
 
 import java.util.List;
 
 import io.reactivex.Observable;
 
 public interface PruebasOrigenDatos {
-    Observable persistirPrueba(PruebaDto pruebaDto);
+    Observable persistirPrueba(ComidaDto comidaDto);
 
-    Observable<List<PruebaDto>> consultarListadoPrueba();
+    Observable<List<ComidaDto>> consultarListadoPrueba();
 
-    Observable<PruebaDto> consultarPrueba();
+    Observable<ComidaDto> consultarPrueba();
 
-    Observable<List<PruebaDto>> consultarListadoPruebaTiempoReal();
+    Observable<List<ComidaDto>> consultarListadoPruebaTiempoReal();
 
-    Observable<PruebaDto> consultarPruebaTiempoReal();
+    Observable<ComidaDto> consultarPruebaTiempoReal();
 
-    Observable<List<PruebaDto>> consultarListadoPruebaPorFiltro();
+    Observable<List<ComidaDto>> consultarListadoPruebaPorFiltro();
 }

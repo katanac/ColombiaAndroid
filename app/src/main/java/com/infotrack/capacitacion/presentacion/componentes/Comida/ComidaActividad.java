@@ -16,15 +16,16 @@ import javax.inject.Inject;
 
 public class ComidaActividad extends ActividadBase {
 
-    //region Regiones
+    //region Atributos
     @Inject
     Navegador navegador;
     //endregion
 
+    //region Intencion
     public static Intent obtenerIntencion(Context contexto) {
         return new Intent(contexto, ComidaActividad.class);
     }
-
+    //endregion
 
     //region Actividad Base
     @Override

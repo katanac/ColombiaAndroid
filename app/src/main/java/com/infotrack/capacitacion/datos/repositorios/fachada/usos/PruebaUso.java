@@ -1,7 +1,7 @@
 package com.infotrack.capacitacion.datos.repositorios.fachada.usos;
 
 import com.infotrack.artefactos.utilitarios.base.Mapeadores.MapeadorGenerico;
-import com.infotrack.capacitacion.datos.entidades.PruebaDto;
+import com.infotrack.capacitacion.datos.entidades.ComidaDto;
 import com.infotrack.capacitacion.datos.repositorios.fachada.interfaces.PruebaRepositorio;
 import com.infotrack.capacitacion.datos.repositorios.fabrica.FabricaAbstracta;
 import com.infotrack.capacitacion.datos.repositorios.fabrica.GeneradorFabrica;
@@ -18,10 +18,10 @@ import io.reactivex.Observable;
 
 public class PruebaUso implements PruebaRepositorio {
 
-    private final MapeadorGenerico<PruebaDto, PruebaMdl> mapPrueba;
+    private final MapeadorGenerico<ComidaDto, PruebaMdl> mapPrueba;
 
     @Inject
-    PruebaUso(MapeadorGenerico<PruebaDto, PruebaMdl> mapPrueba) {
+    PruebaUso(MapeadorGenerico<ComidaDto, PruebaMdl> mapPrueba) {
         this.mapPrueba = mapPrueba;
     }
 
@@ -29,7 +29,7 @@ public class PruebaUso implements PruebaRepositorio {
     public Observable persistirPrueba(PruebaMdl pruebaMdl) {
         FabricaAbstracta fabricaAbstracta = GeneradorFabrica.crearFabrica(FabricasEnum.Pruebas);
         PruebasOrigenDatos pruebasOrigenDatos = ((PruebasOrigenDatos) fabricaAbstracta.crear(OrigenDatosEnum.FIREBASE.toString()));
-        return pruebasOrigenDatos.persistirPrueba(mapPrueba.revertir(pruebaMdl, new PruebaDto()));
+        return pruebasOrigenDatos.persistirPrueba(mapPrueba.revertir(pruebaMdl, new ComidaDto()));
     }
 
     @Override

@@ -9,13 +9,17 @@
         <menu>
             <item
                 android:id="@+id/navegador_comida"
-                android:icon="@drawable/combo_estilo_degrade"
+                android:icon="@drawable/ic_comida"
                 android:title="@string/menu_comidda" />
 
             <item
                 android:id="@+id/navegador_biodiversidad"
                 android:icon="@drawable/ic_biodiversidad_colombia"
                 android:title="@string/menu_biodiversidad" />
+            <item
+                android:id="@+id/navegador_presedente"
+                android:icon="@drawable/ic_presidents"
+                android:title="@string/menu_presidentes" />
         </menu>
     </item>
 

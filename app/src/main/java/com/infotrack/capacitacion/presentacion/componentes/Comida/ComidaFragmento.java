@@ -17,10 +17,14 @@ public class ComidaFragmento extends FragmentoBase {
     @Inject
     Navegador navegador;
 
+    //region constructor
+
     public static ComidaFragmento obtenerInstancia() {
         return new ComidaFragmento();
     }
+    //endregion
 
+    //region Base
     @Override
     public int asignarLayout() {
         return R.layout.fragmento_comida;
@@ -53,4 +57,5 @@ public class ComidaFragmento extends FragmentoBase {
     public void iniciarPresentador() {
 
     }
+    //endregion
 }

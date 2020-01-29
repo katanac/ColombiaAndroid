@@ -25,6 +25,10 @@
                 android:id="@+id/navegador_presedente"
                 android:icon="@drawable/ic_presidents"
                 android:title="@string/menu_presidentes" />
+            <item
+                android:id="@+id/navegador_ffaaa"
+                android:icon="@drawable/ic_ffaa"
+                android:title="@string/menu_ffaa" />
         </menu>
     </item>
 

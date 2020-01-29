@@ -11,6 +11,7 @@
     <string name="menu_biodiversidad">Biodiversidad</string>
     <string name="menu_sugerencias">Sugerencias</string>
     <string name="menu_presidentes">presidentes</string>
+    <string name="menu_ffaa">Fuerzas Armadas</string>
     <!--endregion-->
 
 </resources>

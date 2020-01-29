@@ -3,8 +3,12 @@ package com.infotrack.capacitacion.di.componente;
 import android.content.Context;
 
 import com.infotrack.capacitacion.di.modulo.ModuloPrincipal;
+import com.infotrack.capacitacion.presentacion.componentes.Biodiversidad.BiodiversidadActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Biodiversidad.BiodiversidadFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
+import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Geografia.GeografiaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Geografia.GeografiaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
@@ -27,6 +31,13 @@ public interface ComponentePrincipal {
     void inject(ComidaActividad comidaActividad);
 
     void inject(ComidaFragmento comidaFragmento);
+
+    void inject(BiodiversidadActividad biodiversidadActividad);
+
+    void inject(BiodiversidadFragmento biodiversidadFragmento);
+    void inject(PresidentesFragmento presidentesFragmento);
+
+    void inject (PresidentesActividad presidentesActividad);
 
     void inject(GeografiaActividad geografiaActividad);
 

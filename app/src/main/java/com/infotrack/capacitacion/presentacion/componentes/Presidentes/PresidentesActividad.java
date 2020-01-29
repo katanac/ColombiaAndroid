@@ -15,18 +15,16 @@ import javax.inject.Inject;
 
 public class PresidentesActividad extends ActividadBase {
 
-
-    //region Intencion
-    public static Intent ObtenerIntencion(Context contexto){
-        return new Intent(contexto, PresidentesActividad.class);
-    }
-    //endregion
-
     //region Atributos
     @Inject
     Navegador navegador;
     //endregion
 
+    //region Intencion
+    public static Intent obtenerIntencion(Context contexto){
+        return new Intent(contexto, PresidentesActividad.class);
+    }
+    //endregion
     //region Base
     @Override
     public int asignarLayout() {
@@ -37,6 +35,9 @@ public class PresidentesActividad extends ActividadBase {
     public void iniciarActividad(Bundle bundle)
     {
         Fragment fragmento = getSupportFragmentManager().findFragmentById(R.id.contenedor);
+        if(fragmento == null){
+            agregarFragmento(R.id.contenedor, navegador.navegarPreseidentesFragmento());
+        }
 
     }
 

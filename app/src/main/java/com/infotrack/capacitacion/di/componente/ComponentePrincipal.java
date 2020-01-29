@@ -9,6 +9,8 @@ import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActivida
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesFragmento;
+import com.infotrack.capacitacion.presentacion.componentes.Geografia.GeografiaActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Geografia.GeografiaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralFragmento;
 
@@ -36,4 +38,10 @@ public interface ComponentePrincipal {
     void inject(PresidentesFragmento presidentesFragmento);
 
     void inject (PresidentesActividad presidentesActividad);
+
+    void inject(GeografiaActividad geografiaActividad);
+
+    void inject(GeografiaFragmento comidaFragmento);
+
+
 }

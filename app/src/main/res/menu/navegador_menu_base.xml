@@ -11,6 +11,11 @@
                 android:id="@+id/navegador_comida"
                 android:icon="@drawable/ic_comida"
                 android:title="@string/menu_comidda" />
+            <item
+                android:id="@+id/navegador_geografia"
+                android:icon="@drawable/ic_geografia"
+                android:title="@string/menu_geografia" />
+
 
             <item
                 android:id="@+id/navegador_biodiversidad"
@@ -24,16 +29,16 @@
     </item>
 
     <item
-        android:id="@+id/navigation_subheader"
-        android:title="@string/sub_header_menu">
-        <menu>
-            <item
-                android:id="@+id/navegador_sugerencias"
-                android:icon="@drawable/combo_estilo_degrade"
-                android:title="@string/menu_sugerencias" />
-        </menu>
+    android:id="@+id/navigation_subheader"
+    android:title="@string/sub_header_menu">
+    <menu>
+        <item
+            android:id="@+id/navegador_sugerencias"
+            android:icon="@drawable/combo_estilo_degrade"
+            android:title="@string/menu_sugerencias" />
+    </menu>
 
-    </item>
+</item>
 
 
 

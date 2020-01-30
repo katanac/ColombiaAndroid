@@ -14,11 +14,12 @@ import javax.inject.Inject;
 
 public class ComidaFragmento extends FragmentoBase {
 
+    //region Atributos
     @Inject
     Navegador navegador;
+    //endregion
 
     //region constructor
-
     public static ComidaFragmento obtenerInstancia() {
         return new ComidaFragmento();
     }

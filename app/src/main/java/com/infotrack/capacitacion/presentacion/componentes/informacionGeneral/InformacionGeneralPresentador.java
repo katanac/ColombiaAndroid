@@ -39,8 +39,8 @@ class InformacionGeneralPresentador extends PresentadorBase<InformacionGeneralCo
 
     @Override
     public void destruir() {
-        persistirPrueba.desechar();
-        consultarPrueba.desechar();
+     //   persistirPrueba.desechar();
+     //   consultarPrueba.desechar();
     }
 
     class ConsultarPruebaObservador extends AccionesObservador<PruebaMdl> {

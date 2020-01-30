@@ -18,12 +18,14 @@
             android:name="com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad"
             android:launchMode="singleTop"
             android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".presentacion.componentes.Comida.ComidaActividad"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".presentacion.componentes.launch.launchActividad" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".presentacion.componentes.Comida.ComidaActividad"
-            tools:ignore="InnerclassSeparator" />
     </application>
 </manifest>

@@ -29,5 +29,7 @@
         </activity>
         <activity android:name=".presentacion.componentes.Biodiversidad.BiodiversidadActividad" />
         <activity android:name=".presentacion.componentes.Presidentes.PresidentesActividad" />
+        <activity android:name=".presentacion.componentes.Geografia.GeografiaActividad" />
+        <activity android:name=".presentacion.componentes.Ffaa.FfaaActividad" />
     </application>
 </manifest>

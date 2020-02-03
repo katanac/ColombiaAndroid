@@ -36,8 +36,8 @@ public class FfaaActividad extends ActividadBase {
     @Override
     public void iniciarActividad(Bundle bundle) {
         Fragment fragmento = getSupportFragmentManager().findFragmentById(R.id.contenedor);
-        //if(fragmento==null)
-            //agregarFragmento(R.id.contenedor, navegador.navegadorFfaaFragmento);
+        if(fragmento==null)
+            agregarFragmento(R.id.contenedor, navegador.navegarFfaaFragmento());
     }
     //endregion
 

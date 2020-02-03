@@ -13,6 +13,7 @@ import com.infotrack.capacitacion.presentacion.componentes.Presidentes.President
 import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaFragmento;
+import com.infotrack.capacitacion.presentacion.componentes.Geografia.GeografiaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralFragmento;
 
@@ -41,6 +42,8 @@ public class Navegador implements INavegador {
                 break;
             case R.id.navegador_sugerencias:
                 break;
+            case R.id.navegador_geografia:
+                navegarGeografiaActividad(context);
             case R.id.navegador_presedente:
                 navegarPresidentesActividad(context);
                 break;
@@ -81,6 +84,19 @@ public class Navegador implements INavegador {
     @Override
     public FragmentoBase navegarInformacionGeneralFragmento() {
         return InformacionGeneralFragmento.obtenerInstancia()                                                       ;
+    }
+
+    @Override
+    public void navegarGeografiaActividad(Context contexto) {
+        Intent intencion = GeografiaActividad.obtenerIntencion(contexto);//ComidaActividad.obtenerIntencion(contexto);
+        intencion.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intencion.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        contexto.startActivity(intencion);
+    }
+
+    @Override
+    public FragmentoBase navegarGeografiaFragmento() {
+        return null;
     }
 
     @Override

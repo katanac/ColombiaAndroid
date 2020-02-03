@@ -35,10 +35,10 @@ public class GeografiaActividad extends ActividadBase {
     @Override
     public void iniciarActividad(Bundle bundle) {
         Fragment fragmento = getSupportFragmentManager().findFragmentById(R.id.contenedor);
-       // if (fragmento == null)
-          //  agregarFragmento(R.id.contenedor, navegador.navegarComidaFragmento());
+        if (fragmento == null)
+       agregarFragmento(R.id.contenedor, navegador.navegarGeografiaFragmento());
     }
-
+//gg
     @Override
     public void iniciarInyector() {
         super.iniciarInyector();

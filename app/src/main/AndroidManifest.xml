@@ -25,5 +25,6 @@
         </activity>
         <activity android:name=".presentacion.componentes.Comida.ComidaActividad"
             tools:ignore="InnerclassSeparator" />
+        <activity android:name=".presentacion.componentes.Ffaa.FfaaActividad" />
     </application>
 </manifest>

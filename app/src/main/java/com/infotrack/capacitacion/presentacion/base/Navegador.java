@@ -7,6 +7,8 @@ import com.infotrack.artefactos.utilitarios.base.FragmentoBase;
 import com.infotrack.capacitacion.R;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
+import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralFragmento;
 
@@ -26,6 +28,9 @@ public class Navegador implements INavegador {
         switch (i) {
             case R.id.navegador_comida:
                 navegarComidaActividad(context);
+                break;
+            case R.id.navegador_ffaaa:
+                navegarFfaaActividad(context);
                 break;
             case R.id.navegador_sugerencias:
                 break;
@@ -54,6 +59,20 @@ public class Navegador implements INavegador {
     public FragmentoBase navegarInformacionGeneralFragmento() {
         return InformacionGeneralFragmento.obtenerInstancia()                                                       ;
     }
+
+    @Override
+    public void navegarFfaaActividad(Context contexto) {
+        Intent intencion = FfaaActividad.obtenerIntencion(contexto);
+        intencion.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intencion.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        contexto.startActivity(intencion);
+    }
+
+    @Override
+    public FragmentoBase navegarFfaaFragmento() {
+        return FfaaFragmento.obtenerInstancia();
+    }
+
     //endregion
 
 

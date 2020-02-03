@@ -14,4 +14,9 @@ public interface INavegador extends NavegadorAbstracto {
     void navegarInformacionGeneralActividad(Context contexto);
 
     FragmentoBase navegarInformacionGeneralFragmento();
+
+
+    void navegarGeografiaActividad(Context contexto);
+
+    FragmentoBase navegarGeografiaFragmento();
 }

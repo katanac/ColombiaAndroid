@@ -27,8 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".presentacion.componentes.Comida.ComidaActividad"
-            tools:ignore="InnerclassSeparator" />
         <activity android:name=".presentacion.componentes.Biodiversidad.BiodiversidadActividad" />
+        <activity android:name=".presentacion.componentes.Presidentes.PresidentesActividad" />
     </application>
 </manifest>

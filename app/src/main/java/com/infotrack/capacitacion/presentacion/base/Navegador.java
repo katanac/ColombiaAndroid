@@ -9,6 +9,8 @@ import com.infotrack.capacitacion.presentacion.componentes.Biodiversidad.Biodive
 import com.infotrack.capacitacion.presentacion.componentes.Biodiversidad.BiodiversidadFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
+import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.informacionGeneral.InformacionGeneralActividad;
@@ -38,6 +40,9 @@ public class Navegador implements INavegador {
                 navegarFfaaActividad(context);
                 break;
             case R.id.navegador_sugerencias:
+                break;
+            case R.id.navegador_presedente:
+                navegarPresidentesActividad(context);
                 break;
         }
     }

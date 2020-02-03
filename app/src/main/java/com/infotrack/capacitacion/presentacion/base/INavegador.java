@@ -20,6 +20,10 @@ public interface INavegador extends NavegadorAbstracto {
 
     FragmentoBase navegarInformacionGeneralFragmento();
 
+    void navegarPresidentesActividad(Context contexto);
+
+    FragmentoBase navegarPreseidentesFragmento();
+
     void navegarFfaaActividad(Context contexto);
 
     FragmentoBase navegarFfaaFragmento();

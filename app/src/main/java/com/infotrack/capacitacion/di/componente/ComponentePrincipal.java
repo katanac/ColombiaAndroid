@@ -48,6 +48,4 @@ public interface ComponentePrincipal {
     void inject(FfaaFragmento ffaaFragmento);
 
     void inject(FfaaActividad ffaaActividad);
-
-
 }

@@ -5,6 +5,8 @@ import android.content.Intent;
 
 import com.infotrack.artefactos.utilitarios.base.FragmentoBase;
 import com.infotrack.capacitacion.R;
+import com.infotrack.capacitacion.presentacion.componentes.Biodiversidad.BiodiversidadActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Biodiversidad.BiodiversidadFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Comida.ComidaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaActividad;
@@ -29,6 +31,9 @@ public class Navegador implements INavegador {
             case R.id.navegador_comida:
                 navegarComidaActividad(context);
                 break;
+            case R.id.navegador_biodiversidad:
+                navegarBiodiversidadActividad(context);
+                break;
             case R.id.navegador_ffaaa:
                 navegarFfaaActividad(context);
                 break;
@@ -46,8 +51,21 @@ public class Navegador implements INavegador {
     }
 
     @Override
+    public void navegarBiodiversidadActividad(Context contexto) {
+        Intent intencion = BiodiversidadActividad.obtenerIntencion(contexto);
+        intencion.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intencion.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        contexto.startActivity(intencion);
+    }
+
+    @Override
     public FragmentoBase navegarComidaFragmento() {
         return ComidaFragmento.obtenerInstancia();
+    }
+
+    @Override
+    public FragmentoBase navegarBiodiversidadFragmento() {
+        return BiodiversidadFragmento.obtenerInstancia();
     }
 
     @Override

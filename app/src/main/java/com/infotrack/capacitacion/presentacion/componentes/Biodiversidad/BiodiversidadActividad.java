@@ -33,9 +33,8 @@ public class BiodiversidadActividad extends ActividadBase {
     @Override
     public void iniciarActividad(Bundle bundle) {
         Fragment fragmento = getSupportFragmentManager().findFragmentById(R.id.contenedor);
-
-        //if(fragmento == null)
-            //agregarFragmento(R.id.contenedor, navegador.navega);
+        if(fragmento == null)
+            agregarFragmento(R.id.contenedor, navegador.navegarBiodiversidadFragmento());
     }
 
     @Override

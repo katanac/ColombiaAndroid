@@ -46,7 +46,6 @@ public class ComidaFragmento extends FragmentoBase {
     public void iniciarFragmento(View view, Bundle bundle) {
         iniciarPresentador();
         ui();
-
     }
 
     @Override

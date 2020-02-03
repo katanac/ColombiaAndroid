@@ -11,6 +11,11 @@ public interface INavegador extends NavegadorAbstracto {
 
     FragmentoBase navegarComidaFragmento();
 
+    void navegarBiodiversidadActividad(Context contexto);
+
+    FragmentoBase navegarBiodiversidadFragmento();
+
+
     void navegarInformacionGeneralActividad(Context contexto);
 
     FragmentoBase navegarInformacionGeneralFragmento();
@@ -18,4 +23,6 @@ public interface INavegador extends NavegadorAbstracto {
     void navegarFfaaActividad(Context contexto);
 
     FragmentoBase navegarFfaaFragmento();
+
+
 }

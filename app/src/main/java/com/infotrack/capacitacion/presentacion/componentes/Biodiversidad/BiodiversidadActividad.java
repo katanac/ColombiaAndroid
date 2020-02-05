@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.MenuItem;
 
 import com.infotrack.artefactos.utilitarios.base.ActividadBase;
 import com.infotrack.capacitacion.R;
@@ -45,4 +46,11 @@ public class BiodiversidadActividad extends ActividadBase {
     }
 
     //endregion
+
+
+    @Override
+    public void seleccionMenuNavegacion(MenuItem menuItem) {
+        super.seleccionMenuNavegacion(menuItem);
+        navegador.seleccionar(menuItem.getItemId(), this);
+    }
 }

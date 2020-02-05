@@ -3,6 +3,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.MenuItem;
 
 import com.infotrack.artefactos.utilitarios.base.ActividadBase;
 import com.infotrack.capacitacion.R;
@@ -39,13 +40,18 @@ public class FfaaActividad extends ActividadBase {
         if(fragmento==null)
             agregarFragmento(R.id.contenedor, navegador.navegarFfaaFragmento());
     }
-    //endregion
-
 
     @Override
     public void iniciarInyector() {
         super.iniciarInyector();
         AplicacionPrincipal app = (AplicacionPrincipal) this.getApplication();
         app.obtenerComponentePrincipal().inject(this);
+    }
+    //endregion
+
+    @Override
+    public void seleccionMenuNavegacion(MenuItem menuItem) {
+        super.seleccionMenuNavegacion(menuItem);
+        navegador.seleccionar(menuItem.getItemId(), this);
     }
 }

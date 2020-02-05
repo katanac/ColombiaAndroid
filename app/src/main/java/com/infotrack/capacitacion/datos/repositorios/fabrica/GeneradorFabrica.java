@@ -1,6 +1,7 @@
 package com.infotrack.capacitacion.datos.repositorios.fabrica;
 
 import com.infotrack.capacitacion.datos.excepciones.GenerarFabricaNullException;
+import com.infotrack.capacitacion.datos.repositorios.origendatos.comida.ComidaFabrica;
 import com.infotrack.capacitacion.datos.repositorios.origendatos.pruebas.PruebasFabrica;
 import com.infotrack.capacitacion.transversal.enumeradores.FabricasEnum;
 
@@ -14,6 +15,8 @@ public class GeneradorFabrica {
 
     public static FabricaAbstracta crearFabrica(FabricasEnum listaFabricas) {
         switch (listaFabricas) {
+            case Comida:
+                return new ComidaFabrica();
             case Pruebas:
                 return new PruebasFabrica();
             case Default:

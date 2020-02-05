@@ -92,7 +92,7 @@ public class Navegador implements INavegador {
 
     @Override
     public void navegarGeografiaActividad(Context contexto) {
-        Intent intencion = GeografiaActividad.obtenerIntencion(contexto);//ComidaActividad.obtenerIntencion(contexto);
+        Intent intencion = GeografiaActividad.obtenerIntencion(contexto);
         intencion.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intencion.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         contexto.startActivity(intencion);

@@ -33,8 +33,8 @@ public class ComidaUso implements ComidaRepositorio {
 
     //region Contrato
     @Override
-    public Observable<List<ComidaMdl>> consultarListadoComida(int idComida) {
-        return generadorFabricaFirebase().consultarListadoComida(idComida)
+    public Observable<List<ComidaMdl>> consultarListadoComida() {
+        return generadorFabricaFirebase().consultarListadoComida()
                 .map(comidaDtos -> mapeadorComida.mapear(comidaDtos, new ComidaMdl()));
     }
     //endregion

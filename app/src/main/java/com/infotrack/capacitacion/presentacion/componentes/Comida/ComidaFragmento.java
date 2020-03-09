@@ -7,16 +7,25 @@ import com.infotrack.artefactos.utilitarios.base.FragmentoBase;
 import com.infotrack.capacitacion.R;
 import com.infotrack.capacitacion.presentacion.base.AplicacionPrincipal;
 import com.infotrack.capacitacion.presentacion.base.Navegador;
+import com.infotrack.capacitacion.presentacion.vistamodelos.ComidaVM;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 
 import javax.inject.Inject;
 
-public class ComidaFragmento extends FragmentoBase {
+public class ComidaFragmento extends FragmentoBase implements ComidaContrato {
 
     //region Atributos
     @Inject
     Navegador navegador;
+
+    @Inject
+    ComidaPresentador presentador;
+
+    private List<ComidaVM> listadoComida;
+    private ComidaAdaptador adaptador;
     //endregion
 
     //region constructor
@@ -39,7 +48,7 @@ public class ComidaFragmento extends FragmentoBase {
 
     @Override
     public void extras() {
-
+        listadoComida = new LinkedList<>();
     }
 
     @Override
@@ -50,11 +59,16 @@ public class ComidaFragmento extends FragmentoBase {
 
     @Override
     public void ui() {
-
+        adaptador = new ComidaAdaptador(listadoComida);
     }
 
     @Override
     public void iniciarPresentador() {
+
+    }
+
+    @Override
+    public void mostarListadoComida() {
 
     }
     //endregion

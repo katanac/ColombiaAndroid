@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Colombia</string>
     <string name="menu_geografia">Geografia</string>
+    <string name="item_texto_defecto">…</string>
 
     //Mensajes de Excepcion
     <string name="error_msj_sin_conexion">Comprueba tu conexión a Internet.</string>

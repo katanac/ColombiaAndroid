@@ -8,5 +8,5 @@ import io.reactivex.Observable;
 
 public interface ComidaRepositorio {
 
-    Observable<List<ComidaMdl>> consultarListadoComida(int idComida);
+    Observable<List<ComidaMdl>> consultarListadoComida();
 }

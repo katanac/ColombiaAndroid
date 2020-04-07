@@ -31,5 +31,6 @@
         <activity android:name=".presentacion.componentes.Presidentes.PresidentesActividad" />
         <activity android:name=".presentacion.componentes.Geografia.GeografiaActividad" />
         <activity android:name=".presentacion.componentes.Ffaa.FfaaActividad" />
+        <activity android:name=".presentacion.componentes.Futbolista.FutbolistaActividad" />
     </application>
 </manifest>

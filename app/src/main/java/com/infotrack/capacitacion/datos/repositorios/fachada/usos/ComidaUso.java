@@ -12,6 +12,8 @@ import com.infotrack.capacitacion.transversal.enumeradores.OrigenDatosEnum;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import io.reactivex.Observable;
 
 public class ComidaUso implements ComidaRepositorio {
@@ -19,7 +21,8 @@ public class ComidaUso implements ComidaRepositorio {
     private final MapeadorGenerico<ComidaDto, ComidaMdl> mapeadorComida;
 
     //region Constructor
-    private ComidaUso(MapeadorGenerico<ComidaDto, ComidaMdl> mapeadorComida) {
+    @Inject
+     ComidaUso(MapeadorGenerico<ComidaDto, ComidaMdl> mapeadorComida) {
         this.mapeadorComida = mapeadorComida;
     }
     //endregion

@@ -7,7 +7,7 @@
     <!--endregion-->
 
     <!--region titulo Bandejas-->
-    <string name="menu_comidda">Comida</string>
+    <string name="menu_comida">Comida</string>
     <string name="menu_biodiversidad">Biodiversidad</string>
     <string name="menu_sugerencias">Sugerencias</string>
     <string name="menu_presidentes">presidentes</string>

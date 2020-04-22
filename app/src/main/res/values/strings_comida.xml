@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_comidad_tiulo_nombre">Nombre Comida:</string>
+    <string name="tv_comidad_tiulo_ingredientes">Ingredientes:</string>
+    <string name="tv_comidad_tiulo_region">Region:</string>
+</resources>

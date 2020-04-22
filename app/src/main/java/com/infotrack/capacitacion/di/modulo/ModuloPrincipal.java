@@ -2,7 +2,9 @@ package com.infotrack.capacitacion.di.modulo;
 
 import android.content.Context;
 
+import com.infotrack.capacitacion.datos.repositorios.fachada.interfaces.ComidaRepositorio;
 import com.infotrack.capacitacion.datos.repositorios.fachada.interfaces.PruebaRepositorio;
+import com.infotrack.capacitacion.datos.repositorios.fachada.usos.ComidaUso;
 import com.infotrack.capacitacion.datos.repositorios.fachada.usos.PruebaUso;
 import com.infotrack.capacitacion.presentacion.base.AplicacionPrincipal;
 
@@ -45,6 +47,12 @@ public class ModuloPrincipal {
     @Provides
     @Singleton
     PruebaRepositorio proporcionaRepositorioPrueba(PruebaUso pruebaUso) {
+        return pruebaUso;
+    }
+
+    @Provides
+    @Singleton
+    ComidaRepositorio comidaRepositorioPrueba(ComidaUso pruebaUso) {
         return pruebaUso;
     }
 

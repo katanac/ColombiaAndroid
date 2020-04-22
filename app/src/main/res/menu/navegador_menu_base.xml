@@ -10,7 +10,7 @@
             <item
                 android:id="@+id/navegador_comida"
                 android:icon="@drawable/ic_comida"
-                android:title="@string/menu_comidda" />
+                android:title="@string/menu_comida" />
             <item
                 android:id="@+id/navegador_geografia"
                 android:icon="@drawable/ic_geografia"

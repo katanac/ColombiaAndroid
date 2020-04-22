@@ -40,6 +40,8 @@ public class FfaaActividad extends ActividadBase {
         if(fragmento==null)
             agregarFragmento(R.id.contenedor, navegador.navegarFfaaFragmento());
     }
+    //endregion
+
 
     @Override
     public void iniciarInyector() {

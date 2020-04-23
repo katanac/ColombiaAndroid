@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nombre_musico">Nombre:</string>
+    <string name="edad_musico">Edad:</string>
+    <string name="genero_musico">Genero:</string>
+</resources>

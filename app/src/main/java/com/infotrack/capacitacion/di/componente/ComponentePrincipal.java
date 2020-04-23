@@ -11,6 +11,8 @@ import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Ffaa.FfaaFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Futbolista.FutbolistaActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Futbolista.FutbolistaFragmento;
+import com.infotrack.capacitacion.presentacion.componentes.Musico.MusicoActividad;
+import com.infotrack.capacitacion.presentacion.componentes.Musico.MusicoFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesActividad;
 import com.infotrack.capacitacion.presentacion.componentes.Presidentes.PresidentesFragmento;
 import com.infotrack.capacitacion.presentacion.componentes.Geografia.GeografiaActividad;
@@ -55,4 +57,8 @@ public interface ComponentePrincipal {
     void inject(FutbolistaActividad futbolistaActividad);
 
     void inject(FutbolistaFragmento futbolistaFragmento);
+
+    void inject(MusicoActividad musicoActividad);
+
+    void inject(MusicoFragmento musicoFragmento);
 }

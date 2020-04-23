@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="nombre_futbolista">Nombre Comida:</string>
-    <string name="apodo_futbolista">Ingredientes:</string>
-    <string name="equipo_profesional_futbolista">Region:</string>
+    <string name="apodo_futbolista">Apodo:</string>
+    <string name="equipo_profesional_futbolista">Equipo Profesional:</string>
 </resources>
